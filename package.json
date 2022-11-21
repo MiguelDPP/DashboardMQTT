@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "next": "13.0.4",
+    "paho.mqtt.js": "^2.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "yup": "^0.32.11"
   }
 }
