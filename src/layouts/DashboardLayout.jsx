@@ -39,7 +39,9 @@ const DashboardLayout = ({ children }) => {
           <nav className="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
             <span className={`badge bg-${(connected)?"success":"danger"} text-lg`}>{(connected)?`Conectado a ${broker}`:"Desconectado"}</span>
           </nav>
-          {children}
+          <div className='row'>
+            {children}
+          </div>
         </div>
       </div>
 

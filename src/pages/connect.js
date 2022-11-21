@@ -1,9 +1,15 @@
 import React from 'react'
 import FormConnect from '@components/FormConnect'
+import Head from 'next/head'
 
 const connect = () => {
   return (
-    <FormConnect />
+    <>
+      <Head>
+        <title>Connect con broker</title>
+      </Head>
+      <FormConnect />
+    </>
   )
 }
 

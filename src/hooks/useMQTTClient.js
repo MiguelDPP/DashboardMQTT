@@ -82,7 +82,6 @@ function useProviderMQTT() {
 
   const publish = (topic, payload) => {
     if (client) {
-      console.log("Publicando");
       const message = new Paho.Message(payload);
       message.destinationName = topic;
       client.send(message);
