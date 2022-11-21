@@ -34,12 +34,12 @@ const Modal = ({handle, setHandle, topic, setTopic, aleatorio}) => {
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">Configuracion</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+              <button type="button" className="btn-close" data-bs-dismiss="modal" onClick={handleTopic} aria-label="Close" />
             </div>
             <div className="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="topic" class="col-form-label">Recipient:</label>
+                  <label for="topic" class="col-form-label">Topico:</label>
                   <input type="text" ref={newTopic} class="form-control" id="topic" placeholder={topic} />
                 </div>
               </form> 
